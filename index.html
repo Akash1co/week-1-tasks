@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Semantic HTML5 webpage demo with accessibility and SEO best practices.">
+  <title>Semantic HTML5 & Accessibility Demo</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Header & Navigation -->
+  <header class="header">
+    <div class="navbar">
+      <h1>Web Development Learning Hub</h1>
+      <nav aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main id="main-content">
+    
+    <!-- Article Section -->
+    <article aria-labelledby="post-title">
+      <header>
+        <h2 id="post-title">Understanding HTML5 Semantics</h2>
+        <p>Published on: <time datetime="2026-09-01">September 1, 2026</time></p>
+      </header>
+
+      <section aria-labelledby="section-intro">
+        <h3 id="section-intro">Why Use Semantic Tags?</h3>
+        <p>Semantic tags help search engines index the page and allow screen readers to navigate properly.</p>
+      </section>
+
+      <section aria-labelledby="section-aria">
+        <h3 id="section-aria">Adding ARIA Attributes</h3>
+        <p>ARIA labels make web content easily accessible to assistive technologies without duplicating default semantic roles.</p>
+      </section>
+    </article>
+    <!-- 3-Column CSS Grid Section -->
+    <section class="card-grid" aria-label="Features">
+      <article class="card">
+        <h3>Flexbox Layouts</h3>
+        <p>Learn one-dimensional space distribution along a row or column.</p>
+        <button class="btn" type="button">Explore</button>
+      </article>
+
+      <article class="card">
+        <h3>CSS Grid Mastery</h3>
+        <p>Build two-dimensional structural grids across rows and columns.</p>
+        <button class="btn" type="button">Explore</button>
+      </article>
+
+      <article class="card">
+        <h3>Transitions & Hover</h3>
+        <p>Smooth interactive micro-animations for cards and buttons.</p>
+        <button class="btn" type="button">Explore</button>
+      </article>
+    </section>
+
+    <!-- Sidebar -->
+    <aside aria-label="Related Topics">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="https://developer.mozilla.org" target="_blank" rel="noopener noreferrer">MDN Web Docs</a></li>
+      </ul>
+    </aside>
+
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2026 Web Development Learning Hub</p>
+  </footer>
+
+</body>
+</html>
