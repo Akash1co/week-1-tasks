@@ -112,22 +112,35 @@ body {
 }
 
 /* 4. Responsive Mobile Breakpoint */
-@media (max-width: 768px) {
+footer {
+  max-width: 68.75rem;
+  margin: 2rem auto 0;
+  padding: 1.5rem;
+  border-top: 0.0625rem solid #e2e8f0;
+  color: #64748b;
+  font-size: 0.9rem;
+}
+
+/* Tablet Breakpoint: 768px */
+@media (min-width: 48rem) {
   .navbar {
-    flex-direction: column;
-    gap: 1rem;
-    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 
   .card-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
   }
 }
-footer {
-  max-width: 1100px;
-  margin: 2rem auto 0;
-  padding: 1.5rem;
-  border-top: 1px solid #e2e8f0;
-  color: #64748b;
-  font-size: 0.9rem;
+
+/* Desktop Breakpoint: 1200px */
+@media (min-width: 75rem) {
+  .card-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  footer {
+    max-width: 75rem;
+  }
 }
